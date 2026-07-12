@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#1e293b;
+}
+
+/* HEADER */
+
+header{
+    background:#1e3a8a;
+    color:white;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:28px;
+    color:#FFD54F;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+#logoutBtn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#logoutBtn:hover{
+    background:#dc2626;
+}
+
+/* CARDS */
+
+.cards{
+    max-width:1200px;
+    margin:35px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:0 20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card i{
+    font-size:35px;
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.card h1{
+    font-size:40px;
+    color:#1e3a8a;
+}
+
+/* YEAR */
+
+.year{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    padding:20px;
+}
+
+#yearSelect{
+    padding:12px 16px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+    font-size:16px;
+}
+
+#addYearBtn{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#addYearBtn:hover{
+    background:#16317a;
+}
+
+/* MONTHS */
+
+.months{
+    max-width:1200px;
+    margin:25px auto 50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+    padding:0 20px;
+}
+
+.month-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.month-card:hover{
+    background:#1e3a8a;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.year{
+    flex-direction:column;
+}
+
+}
